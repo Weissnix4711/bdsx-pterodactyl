@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --no-cache --update freetype nodejs npm wine \
+RUN apk add --no-cache --update nodejs npm wine freetype \
     && adduser -D -h /home/container container
 
 USER container
