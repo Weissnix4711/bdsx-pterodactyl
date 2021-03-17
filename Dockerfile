@@ -1,7 +1,8 @@
-FROM alpine:latest
+FROM quay.io/parkervcp/pterodactyl-images:debian_wine-5
 
-RUN apk add --no-cache --update nodejs npm wine freetype \
-    && adduser -D -h /home/container container
+USER root
+RUN apt update -y \
+    && apt install -y nodejs npm
 
 USER container
 ENV USER=container HOME=/home/container
