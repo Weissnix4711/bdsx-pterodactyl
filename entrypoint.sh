@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 
 # Make sure we're in the correct dir
 cd /home/container/
