@@ -2,7 +2,7 @@ FROM weissnix/pterodactyl-images:debian_wine-6
 
 USER root
 RUN apt update -y \
-    && apt install -y nodejs npm
+    && apt install -y nodejs npm libfreetype6
 
 USER container
 ENV USER=container HOME=/home/container
