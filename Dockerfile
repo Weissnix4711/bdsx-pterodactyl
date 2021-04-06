@@ -1,4 +1,4 @@
-FROM quay.io/parkervcp/pterodactyl-images:debian_wine-5
+FROM weissnix/pterodactyl-images:debian_wine-6
 
 USER root
 RUN apt update -y \
